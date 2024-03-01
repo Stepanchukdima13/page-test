@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 formData[`select${index}`] = select.value;
             }
         });
-        alert(formData)
         fetch('/send-object', {
             method: 'POST',
             headers: {
