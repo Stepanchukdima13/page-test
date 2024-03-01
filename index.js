@@ -4,7 +4,7 @@ const pipedrive = require('pipedrive');
 const defaultClient = new pipedrive.ApiClient();
 
 let apiToken = defaultClient.authentications.api_key;
-apiToken.apiKey = '06019c1eda56cbb147a21cc752aef3ba59ecbfde';
+apiToken.apiKey = 'b04f638bf3dbbf9a29b0eecc234130bb8c1b3aff';
 
 
 const express = require('express');
@@ -39,7 +39,7 @@ async function updatingCustomFieldValue(objData) {
     try {
         console.log('Sending request...');
 
-        const DEAL_ID = 2;
+        const DEAL_ID = 15;
         const fieldsApi = new pipedrive.DealFieldsApi(defaultClient);
         const dealsApi = new pipedrive.DealsApi(defaultClient);
         const dealFields = await fieldsApi.getDealFields();
@@ -70,7 +70,7 @@ async function updatePerson(objData) {
         console.log('Sending request...');
         const api = new pipedrive.PersonsApi(defaultClient);
 
-        const PERSON_ID = 1 ;
+        const PERSON_ID = 21 ;
         const data = {
             first_name: objData.firstName,
             last_name:objData.lastName,

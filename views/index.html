@@ -11,8 +11,8 @@
         <div class="form-section client-details-wrapper">
             <h2>Client Details</h2>
             <div class="items-in-one-line">
-                <input name="firstName" placeholder="First name" type="text">
-                <input name="lastName" placeholder="Last name" type="text">
+                <input name="firstName" placeholder="First name" type="text" required>
+                <input name="lastName" placeholder="Last name" type="text" required>
             </div>
             <input name="Phone" type="tel" placeholder="Phone">
             <input type="email" name = "Email" placeholder="Email (optional)">
@@ -37,11 +37,11 @@
         </div>
         <div class="form-section service-location">
             <h2>Service location</h2>
-            <input type="text" name="Address" placeholder="Address">
-            <input type="text" name='City/town/village/locality of Address' placeholder="City">
-            <input type="text" name='State/county of Address' placeholder="State">
+            <input type="text" name="Address" placeholder="Address" required>
+            <input type="text" name='City/town/village/locality of Address' placeholder="City" required>
+            <input type="text" name='State/county of Address' placeholder="State" required>
             <div class="items-in-one-line">
-                <input type="text" id="zip-code" name='ZIP/Postal code of Address' placeholder="Zip code">
+                <input type="text" id="zip-code" name='ZIP/Postal code of Address' placeholder="Zip code" required>
                 <select id="area" name="Area">
                     <option value="">Select an area</option>
                     <option value="area1">area 1</option>
