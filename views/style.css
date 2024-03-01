@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.form-sections{
+    display: flex;
+    justify-content: center;
+    width: 1500px;
+    flex-wrap: wrap;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 4px ;
+    padding: 15px;
+    margin:  10px;
+    width: 500px;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, .2);
+}
+input, .job-description-input{
+    padding: 8px;
+    width: 96.5%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+select{
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.job-description-input{
+    height: 80px;
+}
+
++
+
+h2{
+    padding: 5px;
+}
+.items-in-one-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.items-in-one-line input {
+    width: 45%;
+}
+.items-in-one-line select {
+    width: 49%;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover, .button:focus {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.button:active {
+    background-color: #004099;
+    transform: scale(0.95);
+}
+.btn_wrapper{
+    margin-left: 500px;
+    margin-top: 30px;
+}
+
+
